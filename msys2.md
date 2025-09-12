@@ -73,6 +73,16 @@ xmake --version
 
 ![图片丢失](img/install_toolchain_3.jpg "检查GCC和xmake版本")
 
+## 更新工具
+
+打开UCRT64终端，输入以下命令：
+
+```bash
+pacman -Syu
+```
+
+更多pacman的使用方法可以参考[MSYS2官方文档](https://www.msys2.org/docs/package-management/)或使用`pacman --help`查看帮助。直接搜索教程亦可。
+
 ## 配置环境变量
 
 命令行界面就是科幻电影中常见的那种全是字符的界面，我们通过输入一些命令来执行操作。windows上自带的cmd和powershell就是命令行界面，可以按Win+R输入cmd或powershell来启动它们。  
