@@ -9,4 +9,5 @@
 ## 目录
 
 - [MSYS2 安装及工具链配置](msys2.md)
-- [VScode 安装及初步配置](vscode.md)
+- [vscode 安装及初步配置](vscode.md)
+- [vscode 使用xmake进行工程管理的C/C++环境配置](vscode_xmake.md)
