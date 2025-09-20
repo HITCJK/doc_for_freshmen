@@ -69,3 +69,17 @@ pacman -Sy mingw-w64-ucrt-x86_64-clang-tools-extra
 ![图片丢失](img/vscode_xmake_12.png "编译报错")
 
 >在使用`gcc`作为工具链时，平台（platform）需要设置为`mingw`（默认为`windows`），否则无法正常进行断点调试。
+
+### 更新compoile_commands.json文件
+
+在刚创建项目时，代码中可能会报无法找到的错误：
+
+![图片丢失](img/vscode_xmake_13.jpg "代码报错")
+
+这是因为默认compile_commands.json文件中的是`clang`而非我们使用的`gcc`，我们可以在使用`gcc`工具链编译完成后使用快捷键`Ctrl` + `Shift` + `P`打开命令面板，运行`Xmake:updateintellisense`命令来更新`compile_commands.json`文件，之后代码中的错误会消失。
+
+![图片丢失](img/vscode_xmake_14.jpg "compile_commands.json")
+
+![图片丢失](img/vscode_xmake_15.jpg "Xmake:updateintellisense")
+
+当我们的项目配置发生变化时，例如添加了新的源文件、头文件目录（须在`xmake.lua`中对应修改配置），也需要重新运行该命令来更新`compile_commands.json`文件来确保代码解析正确。
