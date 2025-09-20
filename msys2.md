@@ -129,3 +129,7 @@ Set-ExecutionPolicy RemoteSigned
 ![图片丢失](img/config_path_5.jpg "脚本运行成功")
 
 从上面的问题我们可以发现xmake在`C:\msys64\ucrt64\bin`目录下存放的是脚本，而实际上他的可执行文件在`C:\msys64\ucrt64\share\xmake`下，在命令行界面中可以通过脚本调用到别处的可执行文件，但在VScode中通过插件调用会出错，因此我们还可以为xmake单独添加环境变量`C:\msys64\ucrt64\share\xmake`。
+
+请务必检查是否已经添加全部两个环境变量，第二个环境变量的缺失将导致后续vscode中使用报错。
+
+![图片丢失](img/config_path_6.jpg "vscode报错")
