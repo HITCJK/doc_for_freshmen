@@ -63,3 +63,5 @@ pacman -Sy mingw-w64-ucrt-x86_64-clang-tools-extra
 点击`Build`，xmake会自动编译项目。编译完成后，点击`▷`，会在终端中运行程序，点击`▢`则是开启调试。
 
 第一次编译时可能会因为windows平台下默认的工具链是msvc而报错，我们可以点击`toolchain`，选择`gcc`作为工具链，此后即可正常编译。
+
+>在使用`gcc`作为工具链时，平台（platform）需要设置为`mingw`，否则无法正常进行断点调试。
