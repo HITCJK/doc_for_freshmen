@@ -64,4 +64,8 @@ pacman -Sy mingw-w64-ucrt-x86_64-clang-tools-extra
 
 第一次编译时可能会因为windows平台下默认的工具链是msvc而报错，我们可以点击`toolchain`，选择`gcc`作为工具链，此后即可正常编译。
 
+![图片丢失](img/vscode_xmake_11.jpg "选择gcc工具链")
+
+![图片丢失](img/vscode_xmake_12.png "编译报错")
+
 >在使用`gcc`作为工具链时，平台（platform）需要设置为`mingw`（默认为`windows`），否则无法正常进行断点调试。
